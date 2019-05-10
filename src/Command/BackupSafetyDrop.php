@@ -12,7 +12,7 @@ use Symfony\Component\HttpKernel\KernelInterface;
 
 class BackupSafetyDrop extends Command
 {
-    protected static $defaultName = 'Fpasquer:BackupSymfony:safetyDrop';
+    protected static $defaultName = 'BackupSymfony:safetyDrop';
 
     /**
      * @var KernelInterface
