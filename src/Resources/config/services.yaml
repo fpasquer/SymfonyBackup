@@ -1,0 +1,12 @@
+services:
+  Fpasquer\BackupSymfony\Command\BackupExportCommand:
+    tags:
+      - { name: 'console.command', command: 'BackupSymfony:extract' }
+
+  Fpasquer\BackupSymfony\Command\BackupImportCommand:
+    tags:
+      - { name: 'console.command', command: 'BackupSymfony:import' }
+
+  Fpasquer\BackupSymfony\Command\BackupSafetyDrop:
+    tags:
+      - { name: 'console.command', command: 'BackupSymfony:safetyDrop' }
