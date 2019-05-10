@@ -6,7 +6,7 @@ use ProxyManager\FileLocator\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
-class SymfonyBackupExtention extends Extension
+class BackupSymfonyExtention extends Extension
 {
     public function load(array $configs, ContainerBuilder $container)
     {
