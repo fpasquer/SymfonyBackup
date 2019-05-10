@@ -1,0 +1,17 @@
+{
+    "name": "fpasquer/symfony-backup-bundle",
+    "description": "Manage Mysql database backup.",
+    "type": "library",
+    "require": {},
+    "authors": [
+        {
+            "name": "Florian Pasquereau",
+            "email": "fpasquer@student.42.fr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Fpasquer\\BackupSymfony\\": "src/"
+        }
+    }
+}
