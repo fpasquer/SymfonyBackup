@@ -2,6 +2,8 @@
 
 namespace Fpasquer\BackupSymfony\DependencyInjection;
 
+use Doctrine\DBAL\Connection;
+
 class DetailBackup
 {
     /**
@@ -29,12 +31,12 @@ class DetailBackup
      */
     private $date;
 
-    public function __construct(string $hostname, string $database, string $user, string $password)
+    public function __construct(Connection $connection)
     {
-        $this->hostname = $hostname;
-        $this->database = $database;
-        $this->user = $user;
-        $this->password = $password;
+        $this->hostname = $connection->getHost();
+        $this->database = $connection->getDatabase();
+        $this->user = $connection->getUsername();
+        $this->password = $connection->getPassword();
         try {
             $this->date = new \DateTime();
         } catch (\Exception $e) {
