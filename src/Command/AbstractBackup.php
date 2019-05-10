@@ -35,11 +35,6 @@ abstract class AbstractBackup extends Command
         } catch (\Exception $e) {
             die($e->getMessage());
         }
-        $this->detailBackup = new DetailBackup(
-            $connection->getHost(),
-            $connection->getDatabase(),
-            $connection->getUsername(),
-            $connection->getPassword()
-        );
+        $this->detailBackup = new DetailBackup($connection);
     }
 }
