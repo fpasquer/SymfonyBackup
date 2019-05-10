@@ -1,7 +1,9 @@
 {
     "name": "fpasquer/symfony-backup-bundle",
     "description": "Manage Mysql database backup.",
-    "require": {},
+    "require": {
+        "symfony/orm-pack": "^1.0"
+    },
     "authors": [
         {
             "name": "Florian Pasquereau",
