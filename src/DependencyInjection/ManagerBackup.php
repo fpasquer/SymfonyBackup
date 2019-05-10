@@ -17,7 +17,7 @@ class ManagerBackup
      */
     public function __construct(string $webDirector)
     {
-        $path = $webDirector . "\\Fpasquer\\BackupSymfony\\Resources\\config\\setting.yaml";
+        $path = $webDirector . "\\vendor\\fpasquer\\symfony-backup-bundle\\src\\Resources\\config\\setting.yaml";
         if (file_exists($path) === false) {
             throw new \Exception("Config File missing");
         }
