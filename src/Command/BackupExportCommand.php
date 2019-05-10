@@ -7,7 +7,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class BackupExportCommand extends AbstractBackup
 {
-    protected static $defaultName = 'Fpasquer:BackupSymfony:extract';
+    protected static $defaultName = 'BackupSymfony:extract';
 
     public function configure()
     {
