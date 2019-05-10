@@ -8,7 +8,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class BackupImportCommand extends AbstractBackup
 {
-    protected static $defaultName = 'backupManager:import';
+    protected static $defaultName = 'Fpasquer:BackupSymfony:import';
 
     public function configure()
     {
