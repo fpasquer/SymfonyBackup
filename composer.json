@@ -1,7 +1,6 @@
 {
     "name": "fpasquer/symfony-backup-bundle",
     "description": "Manage Mysql database backup.",
-    "type": "library",
     "require": {},
     "authors": [
         {
